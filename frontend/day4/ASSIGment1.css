@@ -1,0 +1,55 @@
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background: url(pexels-pixabay-531880.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+.full{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(37, 36, 36);
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    opacity: 0.8;
+    border-radius: 10%;
+}
+.content{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.9;
+    position: absolute;
+    left: 25%;
+    bottom: 80%;
+}
+img{
+    border-radius: 60%;
+}
+.content input{
+    font-size: 20px;
+    margin-top: 10%;
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid ;
+}
+.LoginButton{
+    margin-top: 20%;
+    background-color: green;
+    padding: 5%;
+    width: 150%;
+}
+label{
+    width: 200px;
+}
+
+    
