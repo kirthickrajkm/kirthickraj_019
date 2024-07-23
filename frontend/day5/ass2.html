@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Palindrome() {
+            let str = document.getElementById("str").value;
+            let result = "Palindrome";
+            let rev="";
+    for (let i = str.length-1;i>=0;i--) {
+        rev = rev+str[i];
+    }
+        if (rev == str){
+            result="Palindrome";
+    } 
+        else {
+            result="NotPalindrome";
+    }
+    document.getElementById("ResultDiv").innerHTML = result;
+}
+    </script>
+</head>
+<body>
+    Enter the String:<input type="text" id="str"/>
+    <br>
+    <br>
+    <button onclick="Palindrome()">Proceed</button>
+    <div id="ResultDiv"></div>
+</body>
+</html>

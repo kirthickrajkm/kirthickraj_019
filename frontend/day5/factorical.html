@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style = "text-align: center; font-size: 20px;">
+<h1> Welcome. enter your factorical.</h1>
+<h2>Enter a number: <input id = "num"></h2>
+<br><br>
+<button onclick = "fact()"> Factorial </button>
+<p id = "res"></p>
+<script>
+function fact(){
+var i, num, f;
+f = 1;
+num = document.getElementById("num").value;
+for(i = 1; i <= num; i++)  
+{
+f = f * i;
+}
+
+document.getElementById("res").innerHTML = "factorial : "+ f ;
+}
+</script>
+
+<style>
+    h1{
+        color:rgb(3, 137, 247);
+    }
+</style>
+<style>
+    button{
+        color: aqua;
+        background-color: black;
+    }
+    h2{
+        color: rgb(253, 9, 151);
+    }
+    body{
+        background-color:rgb(243, 242, 184) ;
+    }
+    input{
+        background-color: transparent;
+    }
+</style>
+</body>
+</html>
