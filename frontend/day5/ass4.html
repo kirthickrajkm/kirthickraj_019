@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function check(){
+    let originalString=document.getElementById("mytext").value;
+      const length = originalString.length;
+    
+      document.write(`Length of the string: ${length}<br>`);
+      const charAtIndex = originalString.charAt(7);
+      document.write(`Character at index 7: ${charAtIndex}<br>`);
+
+      const slicedString = originalString.slice(3, 10);
+      document.write(`Sliced string: ${slicedString}<br>`);
+
+      const subString = originalString.substring(2, 5);
+      document.write(`Substring: ${subString}<br>`);
+
+      const subStr = originalString.substr(2, 5);
+      document.write(`Substr: ${subStr}<br>`);
+
+      const upperCaseString = originalString.toUpperCase();
+      document.write(`Uppercase string: ${upperCaseString}<br>`);
+
+      const lowerCaseString = originalString.toLowerCase();
+      document.write(`Lowercase string: ${lowerCaseString}<br>`);
+
+      const concatenatedString = originalString.concat("Javascript");
+      document.write(`Concatenated string: ${concatenatedString}<br>`);
+
+      const trimmedString = originalString.trim();
+      document.write(`Trimmed string: ${trimmedString}<br>`);
+
+      const trimmedStart = originalString.trimStart();
+      const trimmedEnd = originalString.trimEnd();
+      document.write(`Trimmed start: '${trimmedStart}'<br>`);
+      document.write(`Trimmed end: '${trimmedEnd}'<br>`);
+
+      const repeatedString = originalString.repeat(3);
+      document.write(`Repeated string: ${repeatedString}<br>`);
+
+      const replacedString = originalString.replace("World", "Bharath");
+      document.write(`Replaced string: ${replacedString}<br>`);
+
+      const replacedAllString = originalString.replaceAll("l", "L");
+      document.write(`Replaced all string: ${replacedAllString}<br>`);
+
+      const splitArray = originalString.split(" ");
+      document.write("Split array:", splitArray);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="mytext">
+    <button onclick="check()">Click</button>
+   <div id="output"></div>
+  </body>
+</html>
