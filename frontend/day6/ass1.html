@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+        <script>
+            function clearField(){
+                document.getElementById('field').value = '';
+            }
+            function inputValue(val){
+                document.getElementById('field').value+=val;
+            }
+            function backspace(){
+                let field =document.getElementById('field');
+                field.value = field.value.slice(0,-1);
+            }
+            function calculate(){
+                let field = document.getElementById('field');
+                let expression = field.value;
+                field.value=eval(expression);
+            }  
+             </script>
+        <div class="container">
+            <p>Calculator</p>
+            <div class="search"><input type="text" name="display" id="field"></div>
+           
+                <div class="bttns" onclick="clearField()">C</div>
+                <div class="bttns" onclick="inputValue('%')">%</div>
+                <div class="bttns" onclick="backspace()"><=</div>
+                <div class="bttns" onclick="inputValue('/')">/</div>
+                <div class="btns" onclick="inputValue('7')">7</div>
+                <div class="btns" onclick="inputValue('8')">8</div>
+                <div class="btns" onclick="inputValue('9')">9</div>
+                <div class="bttns" onclick="inputValue('*')">*</div>
+                <div class="btns" onclick="inputValue('4')">4</div>
+                <div class="btns" onclick="inputValue('5')">5</div>
+                <div class="btns" onclick="inputValue('6')">6</div>
+                <div class="bttns" onclick="inputValue('-')">-</div>
+                <div class="btns" onclick="inputValue('1')">1</div>
+                <div class="btns" onclick="inputValue('2')">2</div>
+                <div class="btns" onclick="inputValue('3')">3</div>
+                <div class="bttns" onclick="inputValue('+')">+</div>
+                <div class="btns" onclick="inputValue('00')">00</div>
+                <div class="btns" onclick="inputValue('0')">0</div>
+                <div class="btns" onclick="inputValue('.')">.</div>
+                <div class="bttns" onclick="calculate()">=</div>
+           
+        </div>
+    </body>
+    <style>
+
+
+.container{
+    position: absolute;
+    left: 25%;
+    display: flex;
+    height: 450px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 55, 55);
+    border-radius: 10px;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: rgb(230, 21, 66);
+}
+#field{
+    padding-left: 5px;
+    background-color: rgb(131, 164, 177);
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+    margin-top:1%;
+    font-size: x-large;
+    border-radius: 10px;
+   
+}
+.btns{
+    color: white;
+    box-shadow: 1px 1px red;
+    display: flex;
+    height: 47px;
+    width: 47px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 1px;
+     border: 2px solid black;
+     border-radius: 6px;
+    background-color: rgb(14, 247, 255);
+}
+.bttns{
+    color: white;
+    box-shadow: 1px 1px rgb(241, 5, 5);
+    display: flex;
+    height: 47px;
+    width: 47px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 0.1px;
+     border: 2px solid black;
+     border-radius: 6px;
+    background-color: rgb(163, 231, 3);
+}
+.bttns:hover{
+    color: rgb(0, 0, 0);
+}
+.btns:hover{
+    color: rgb(223, 0, 0);
+}
+</style>
+</html>
