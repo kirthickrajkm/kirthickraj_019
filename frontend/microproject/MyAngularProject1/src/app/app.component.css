@@ -1,0 +1,32 @@
+.content h2{
+    text-align: center;
+    top: 5%;
+    color:rgb(212, 38, 47)
+    
+}
+.three{
+    position: absolute;
+    top: 25%;
+    border: 2px solid rgb(209, 17, 17);
+    padding:40px;
+
+}
+
+.content{
+    border:3px solid rgb(0, 0, 0);
+}
+.line{
+    height: 100%;
+    width: 2px;
+    background-color: black;
+
+}
+.button{
+    display: flex;
+    gap:20px;
+}
+.three b{
+    color:red;
+}
+
+    
